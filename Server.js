@@ -98,7 +98,7 @@ server.listen(PORT, () => {
 });
 
 // add test route to test the server
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send("Server is running");
 });
 
