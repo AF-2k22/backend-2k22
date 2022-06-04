@@ -97,11 +97,6 @@ server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
 
-// add test route to test the server
-app.use("/", (req, res) => {
-  res.send("Server is running");
-});
-
 const GroupRoute = require('./routes/group_route');
 app.use('/group',GroupRoute);
 
